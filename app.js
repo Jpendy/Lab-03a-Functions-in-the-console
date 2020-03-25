@@ -2,7 +2,7 @@
 
 
 
-let leo = {name: 'Leo', age: 5, color: 'black', weight: '75 lbs'};
+let leo = {name: 'Leo', age: 4, color: 'black', weight: '75 lbs'};
 
 let smoke = {name: 'Smoke', age: 13, color: 'white', weight: '60 lbs'};
 
@@ -22,7 +22,21 @@ function logOutThings(array) {
     console.log("Here are your " + array.length + " things");
     
     for (let i = 0; i < array.length; i++) {
+
+        if (dogs[i].age < 5) {
+            console.log("Young Dog");
+        }
+
+        if (dogs[i].age > 7 && dogs[i].age < 12) {
+            console.log("Old Dog");
+        }
+
+        if (dogs[i].age > 11) {
+            console.log("Older Dogs");
+        }
         console.log(array[i]);
+
+       
     }
 }
 
