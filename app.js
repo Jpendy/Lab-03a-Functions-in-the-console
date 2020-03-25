@@ -15,12 +15,15 @@ let bailey = {name: 'Bailey', age: 11, color: 'golden', weight: '70 lbs'};
 const dogs = [leo, smoke, casey, ozlo, bailey];
 
 
-for (let i = 0; i < dogs.length; i++) {
-    console.log(dogs[i]);
-}
+
+
 
 function logOutThings() {
     console.log("Here are your " + dogs.length + " things");
+    for (let i = 0; i < dogs.length; i++) {
+        console.log(dogs[i]);
+    }
 }
 
 logOutThings();
+
