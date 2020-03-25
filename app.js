@@ -18,12 +18,13 @@ const dogs = [leo, smoke, casey, ozlo, bailey];
 
 
 
-function logOutThings() {
-    console.log("Here are your " + dogs.length + " things");
-    for (let i = 0; i < dogs.length; i++) {
-        console.log(dogs[i]);
+function logOutThings(array) {
+    console.log("Here are your " + array.length + " things");
+    
+    for (let i = 0; i < array.length; i++) {
+        console.log(array[i]);
     }
 }
 
-logOutThings();
+logOutThings(dogs);
 
